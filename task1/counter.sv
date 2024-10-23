@@ -4,13 +4,13 @@ module counter #(
     // interface signals
     input logic         clk,    // clock
     input logic         rst,    // reset
-    input logic         incr,
+    input logic       [WIDTH-1:0] incr,
     input logic         en,     //counter enable
     output logic [WIDTH-1:0] count  // count output
 );
 
 always_ff @ (posedge clk, posedge rst)
     if (rst) count <= {WIDTH{1'b0}};
-    else     count <= count + {{WIDTH-1{1'b0}}, en};
+    else     count <= count + {{WIDTH-1{1'b0}}, incr};
 
 endmodule

@@ -43,7 +43,7 @@ int main(int argc, char **argv, char **env) {
         }
 
         // Update the increment value based on vbdValue() to change the frequency
-        top->incr = 2*vbdValue();
+        top->incr = vbdValue();
 
         vbdPlot(int(top->dout), 0, 255);
         vbdCycle(i+1);

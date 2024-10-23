@@ -29,7 +29,6 @@ void Vsinegen___024root__trace_chg_sub_0(Vsinegen___024root* vlSelf, VerilatedVc
     bufp->chgCData(oldp+3,(vlSelf->incr),8);
     bufp->chgCData(oldp+4,(vlSelf->dout),8);
     bufp->chgCData(oldp+5,(vlSelf->sinegen__DOT__address),8);
-    bufp->chgBit(oldp+6,((1U & (IData)(vlSelf->incr))));
 }
 
 void Vsinegen___024root__trace_cleanup(void* voidSelf, VerilatedVcd* /*unused*/) {

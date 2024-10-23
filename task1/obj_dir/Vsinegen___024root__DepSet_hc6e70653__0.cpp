@@ -23,7 +23,7 @@ VL_INLINE_OPT void Vsinegen___024root___sequent__TOP__1(Vsinegen___024root* vlSe
     vlSelf->sinegen__DOT__address = ((IData)(vlSelf->rst)
                                       ? 0U : (0xffU 
                                               & ((IData)(vlSelf->sinegen__DOT__address) 
-                                                 + (IData)(vlSelf->en))));
+                                                 + (IData)(vlSelf->incr))));
 }
 
 void Vsinegen___024root___eval(Vsinegen___024root* vlSelf) {

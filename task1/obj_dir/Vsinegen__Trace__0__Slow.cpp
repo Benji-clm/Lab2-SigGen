@@ -17,8 +17,8 @@ VL_ATTR_COLD void Vsinegen___024root__trace_init_sub__TOP__0(Vsinegen___024root*
     tracep->declBus(c+4,"incr", false,-1, 7,0);
     tracep->declBus(c+5,"dout", false,-1, 7,0);
     tracep->pushNamePrefix("sinegen ");
-    tracep->declBus(c+8,"A_WIDTH", false,-1, 31,0);
-    tracep->declBus(c+8,"D_WIDTH", false,-1, 31,0);
+    tracep->declBus(c+7,"A_WIDTH", false,-1, 31,0);
+    tracep->declBus(c+7,"D_WIDTH", false,-1, 31,0);
     tracep->declBit(c+1,"clk", false,-1);
     tracep->declBit(c+2,"rst", false,-1);
     tracep->declBit(c+3,"en", false,-1);
@@ -26,16 +26,16 @@ VL_ATTR_COLD void Vsinegen___024root__trace_init_sub__TOP__0(Vsinegen___024root*
     tracep->declBus(c+5,"dout", false,-1, 7,0);
     tracep->declBus(c+6,"address", false,-1, 7,0);
     tracep->pushNamePrefix("addrCounter ");
-    tracep->declBus(c+8,"WIDTH", false,-1, 31,0);
+    tracep->declBus(c+7,"WIDTH", false,-1, 31,0);
     tracep->declBit(c+1,"clk", false,-1);
     tracep->declBit(c+2,"rst", false,-1);
-    tracep->declBit(c+7,"incr", false,-1);
+    tracep->declBus(c+4,"incr", false,-1, 7,0);
     tracep->declBit(c+3,"en", false,-1);
     tracep->declBus(c+6,"count", false,-1, 7,0);
     tracep->popNamePrefix(1);
     tracep->pushNamePrefix("sineRom ");
-    tracep->declBus(c+8,"ADDRESS_WIDTH", false,-1, 31,0);
-    tracep->declBus(c+8,"DATA_WIDTH", false,-1, 31,0);
+    tracep->declBus(c+7,"ADDRESS_WIDTH", false,-1, 31,0);
+    tracep->declBus(c+7,"DATA_WIDTH", false,-1, 31,0);
     tracep->declBit(c+1,"clk", false,-1);
     tracep->declBus(c+6,"addr", false,-1, 7,0);
     tracep->declBus(c+5,"dout", false,-1, 7,0);
@@ -88,6 +88,5 @@ VL_ATTR_COLD void Vsinegen___024root__trace_full_sub_0(Vsinegen___024root* vlSel
     bufp->fullCData(oldp+4,(vlSelf->incr),8);
     bufp->fullCData(oldp+5,(vlSelf->dout),8);
     bufp->fullCData(oldp+6,(vlSelf->sinegen__DOT__address),8);
-    bufp->fullBit(oldp+7,((1U & (IData)(vlSelf->incr))));
-    bufp->fullIData(oldp+8,(8U),32);
+    bufp->fullIData(oldp+7,(8U),32);
 }
