@@ -52,7 +52,7 @@ int main(int argc, char **argv, char **env) {
     vbdCycle(simcyc);
 
     // either simulation finished, or 'q' is pressed
-    if ((Verilated::gotFinish()) || (vbdGetkey()=='q')) 
+    if ((Verilated::gotFinish()) || (vbdGetkey()=='`')) 
       exit(0);
   }
 
